@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../Week6/Day 4"
 		}
 	],
 	"settings": {}
