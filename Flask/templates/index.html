@@ -4,38 +4,19 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="static/styles/style.css">
 	<title>Stock Bot 2000</title>
 </head>
 <body>
 	<h1 style="color:cornflowerblue;text-align:center">STOCK BOT 2000</h1>
-	<form>
-		<label for="stocks">Type of stock here</label>
-		<select id="stocks">
-			<option>AbbVie Inc - ABBV</option>
-			<option>Alphabet (class A) - GOOGL</option>
-			<option>Amazon - AMZN</option>
-			<option>Apple - Apple</option>
-			<option>Bank of America Inc. - BAC</option>
-			<option>Berkshire Hathaway - BRB.B</option>
-			<option>Chevron Corporation - CVX</option>
-			<option>Coca Cola - KO</option>
-			<option>Eli Lilly And Co - LLY</option>
-			<option>Exxon Mobile - XOM</option>
-			<option>Home Depot Inc. - HD</option>
-			<option>Johnson's and Johnson - JNJ</option>
-			<option>JPMorgan Chase & Co - JPM</option>
-			<option>MasterCard Inc. - MA</option>
-			<option>Merck & Co Inc - MRK</option>
-			<option>Meta Platforms Inc - META</option>
-			<option>Microsoft - MSFT</option>
-			<option>NVidia - NVDA</option>
-			<option>PepsiCo - PEP</option>
-			<option>Pfizer Inc. - PFE</option>
-			<option>Procter and Gamble - PG</option>
-			<option>Tesla Motors - TSLA</option>
-			<option>UnitedHealth Group - UNH</option>
-			<option>Visa Inc - V</option>
-		</select>
-	</form>
+	<div class = "price_table">
+		{{prices|safe}}
+	</div>
+	<div class="button">
+		<a href="Flask/static/images">
+	</div>
+	<div class="center">
+		<a href="/portfolio">GO TO MY PORTFOLIO</a>
+	</div>
 </body>
 </html>

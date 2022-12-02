@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="static/styles/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="center">
+	<pre>{{ list_of_stocks|safe}}</pre>
+	</div>
+	
+	<form method="POST">
+		<div class="center">
+		<label for="stocks">Type of stock here</label>
+		<select id="stocks" name="stocks_parameter">
+			<option><bold>Please select a stock:</bold></option>
+			<option value="ABBV">AbbVie Inc - ABBV</option>
+			<option value="GOOGL">Alphabet (class A) - GOOGL</option>
+			<option value="AMZN">Amazon - AMZN</option>
+			<option value="AAPL">Apple - AAPL</option>
+			<option value="BAC">Bank of America Inc. - BAC</option>
+			<option value="BRB.B">Berkshire Hathaway - BRB.B</option>
+			<option value="CVX">Chevron Corporation - CVX</option>
+			<option value="KO">Coca Cola - KO</option>
+			<option value="LLY">Eli Lilly And Co - LLY</option>
+			<option value="XOM">Exxon Mobile - XOM</option>
+			<option value="HD">Home Depot Inc. - HD</option>
+			<option value="JNJ">Johnson's and Johnson - JNJ</option>
+			<option value="JPM">JPMorgan Chase & Co - JPM</option>
+			<option value="MA">MasterCard Inc. - MA</option>
+			<option value="MRK">Merck & Co Inc - MRK</option>
+			<option value="META">Meta Platforms Inc - META</option>
+			<option value="MSFT">Microsoft - MSFT</option>
+			<option value="NVDA">NVidia - NVDA</option>
+			<option value="PEP">PepsiCo - PEP</option>
+			<option value="PFE">Pfizer Inc. - PFE</option>
+			<option value="PG">Procter and Gamble - PG</option>
+			<option value="TSLA">Tesla Motors - TSLA</option>
+			<option value="UNH">UnitedHealth Group - UNH</option>
+			<option value="V">Visa Inc - V</option>
+		</select>
+		<br>
+		<br>
+		<input type="number" name="stock_quantity">
+		<br>
+		<button>Add stock to portfolio</button>
+	</div>
+	</form>
+	
+	<br>
+	<h2>You added {{stock_quantities}} of stock {{stocks}}</h2>
+</body>
+</html>
