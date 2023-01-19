@@ -1,12 +1,5 @@
 ### TECH_BOT_2000
 
-## Trains a model based on the following technical indicators:
-Simple moving averages - 20 and 50 days
-Bollinger bands
-On Balance Volume
-Accumulation/distribution line
-Average directional index
-Aroon oscillator
-Stochastic oscillator (slow)
-Moving average convergence divergence
-Relative Strength Index
+## Trains a long short-term memory neural network to predict stock prices of selected stocks in the S&P 500.
+
+This was my final project for the Data Analytics Bootcamp at Ironhack in December 2022.
